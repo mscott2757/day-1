@@ -1,6 +1,5 @@
 {
   "name": "day-1",
-  "homepage": "https://mscott2757.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +7,6 @@
     "@fortawesome/fontawesome-free-brands": "^5.0.11",
     "@fortawesome/react-fontawesome": "0.0.19",
     "ajv": "^6.4.0",
-    "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
     "react": "^16.3.2",
@@ -22,8 +20,6 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
