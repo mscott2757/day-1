@@ -1,0 +1,47 @@
+@import '~font-awesome/css/font-awesome.min.css';
+@import 'info';
+@import 'banner';
+@import 'shared';
+
+@font-face {
+  font-family: "Apercu";
+  src: url("../../fonts/apercu_regular_pro.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+p, h2, a {
+  color: #333;
+  letter-spacing: 0.25px;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.app {
+  font-family: "Apercu";
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+
+  @media screen and (max-width: $break-three) {
+    flex-direction: column;
+  }
+}
+

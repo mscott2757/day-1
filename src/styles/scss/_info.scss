@@ -1,0 +1,60 @@
+@import 'shared';
+
+.info-wrapper {
+  width: 40%;
+  height: 100%;
+  position: relative;
+
+  @media screen and (max-width: $break-one) {
+    width: 35%;
+  }
+
+  @media screen and (max-width: $break-two) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: $break-three) {
+    width: 100%;
+    order: 2;
+  }
+
+  .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .info-accounts {
+      margin-bottom: 60px;
+
+      li {
+        margin-right: 13px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    h2 {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    &-links {
+      li {
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          font-size: 0.75em;
+          letter-spacing: 0.25px;
+        }
+      }
+    }
+  }
+}
+

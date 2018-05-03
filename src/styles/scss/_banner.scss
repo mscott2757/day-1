@@ -1,0 +1,33 @@
+@import 'shared';
+
+.banner-wrapper {
+  width: 60%;
+  height: 100%;
+
+  @media screen and (max-width: $break-one) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: $break-two) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $break-three) {
+    width: 100%;
+    order: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .banner-description {
+    display: none;
+    text-align: center;
+    font-size: 0.75em;
+
+    &--visible {
+      display: block;
+    }
+  }
+}
