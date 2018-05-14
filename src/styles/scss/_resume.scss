@@ -1,0 +1,45 @@
+.resume {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+
+  .resume-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+
+    a {
+      color: white;
+      font-size: 0.75em;
+      letter-spacing: 0.25px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    justify-content: left;
+
+    .resume-close {
+      z-index: 2;
+
+      a {
+        color: #333;
+      }
+    }
+  }
+
+  .react-pdf__Page__annotations {
+    display: none;
+  }
+
+  .react-pdf__Page {
+    padding-bottom: 15px;
+  }
+}

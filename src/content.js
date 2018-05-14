@@ -2,7 +2,6 @@ import { faInstagram, faLinkedinIn, faMedium, faSpotify } from '@fortawesome/fon
 
 export const info = {
   links: [
-    { name: 'resume', url: 'https://drive.google.com/file/d/1Qi4OPekK7N1xIh4xYIygSKWydC5KibjK/view?usp=sharing' },
     { name: 'photo',  url: 'https://photo.masonchan.co' },
     { name: 'code',   url: 'https://github.com/mscott2757' },
   ],
@@ -17,4 +16,8 @@ export const info = {
 export const banner = {
   imgSrc: require('./images/kyoto-station.jpg'),
   description: 'Kyoto Station, January 2018'
+}
+
+export const resume = {
+  file: require('./resume.pdf')
 }

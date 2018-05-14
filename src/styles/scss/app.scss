@@ -1,5 +1,6 @@
 @import 'info';
 @import 'banner';
+@import 'resume';
 @import 'shared';
 
 @font-face {
@@ -36,6 +37,7 @@ ul {
   height: 100vh;
   width: 100vw;
   display: flex;
+  position: relative;
   flex-direction: row;
   padding: 25px;
 
