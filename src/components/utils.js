@@ -1,7 +1,8 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types';
 
-export const Account = ({ icon, url }) => {
+const Account = ({ icon, url }) => {
   return (
     <li>
       <a href={url}>
@@ -11,11 +12,23 @@ export const Account = ({ icon, url }) => {
   );
 }
 
-export const Link = ({ name, url }) => {
+Account.propTypes = {
+  url: PropTypes.string.isRequired,
+}
+
+const Link = ({ name, url }) => {
   return (
     <li>
       <a href={url}>{name}</a>
     </li>
   );
 }
+
+Link.propTypes = {
+  url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+}
+
+export { Account };
+export { Link }
 

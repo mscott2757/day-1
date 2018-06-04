@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Account } from './utils';
+import PropTypes from 'prop-types';
 
 const Info = ({ links, accounts, handleToggle }) => {
   const toggleResume = (e) => {
@@ -23,6 +24,17 @@ const Info = ({ links, accounts, handleToggle }) => {
       </div>
     </div>
   );
+}
+
+Info.propTypes = {
+  handleToggle: PropTypes.func.isRequired,
+  links: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+  })).isRequired,
+  accounts: PropTypes.arrayOf(PropTypes.shape({
+    url: PropTypes.string.isRequired
+  })).isRequired
 }
 
 export default Info;

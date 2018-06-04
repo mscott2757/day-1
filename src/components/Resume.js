@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
+import PropTypes from 'prop-types';
 
 class Resume extends Component {
   componentDidMount() {
@@ -47,6 +48,12 @@ class Resume extends Component {
       </div>
     );
   }
+}
+
+Resume.propTypes = {
+  visible: PropTypes.bool.isRequired,
+  file: PropTypes.string.isRequired,
+  handleToggle: PropTypes.func.isRequired
 }
 
 export default Resume;

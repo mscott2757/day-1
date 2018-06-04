@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Banner extends Component {
   constructor(props) {
@@ -31,6 +32,11 @@ class Banner extends Component {
       </div>
     )
   }
+}
+
+Banner.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default Banner;
