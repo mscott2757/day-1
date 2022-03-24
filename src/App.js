@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/css/app.css';
+import './styles/scss/app.scss';
 import { Info, Banner, Resume } from './components';
 import { info, banner, resume } from './content';
 
