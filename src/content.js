@@ -14,10 +14,5 @@ export const info = {
 }
 
 export const banner = {
-  imgSrc: require('./images/kyoto-station.jpg'),
   description: 'Kyoto Station, January 2018'
-}
-
-export const resume = {
-  file: require('./resume.pdf')
 }

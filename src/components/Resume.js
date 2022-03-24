@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import PropTypes from 'prop-types';
+import file from './../resume.pdf';
 
 class Resume extends Component {
   componentDidMount() {
@@ -33,7 +34,7 @@ class Resume extends Component {
   }
 
   render() {
-    const { visible, file } = this.props;
+    const { visible } = this.props;
     if (!visible) {
       return null;
     }
@@ -52,7 +53,6 @@ class Resume extends Component {
 
 Resume.propTypes = {
   visible: PropTypes.bool.isRequired,
-  file: PropTypes.string.isRequired,
   handleToggle: PropTypes.func.isRequired
 }
 
