@@ -14,7 +14,7 @@ const Info = ({ links, accounts, handleToggle }) => {
         <ul className='info-accounts'>
           {accounts.map((account) => <Account {...account} key={account.id} /> )}
         </ul>
-        <h2>Mason Chan</h2>
+        <h2>Mason Chao-Scott</h2>
         <ul className='info-links'>
           <li>
             <a href='/toggle-resume' onClick={toggleResume}>resume</a>
