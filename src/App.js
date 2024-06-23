@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './styles/scss/app.scss';
 import { Info, Banner, Resume } from './components';
 import { info, banner } from './content';
-import imgSrc from './images/kyoto-station.jpg';
+import imgSrc from './images/getty.jpg';
 
 
 class App extends Component {

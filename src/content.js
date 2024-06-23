@@ -12,5 +12,5 @@ export const info = {
 }
 
 export const banner = {
-  description: 'Kyoto Station, January 2018'
+  description: 'Los Angeles, November 2023'
 }
