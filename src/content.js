@@ -1,4 +1,4 @@
-import { faInstagram, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
+import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export const info = {
   links: [
