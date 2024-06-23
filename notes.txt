@@ -1,0 +1,4 @@
+For cache issues
+-Purge cache in cloudflare
+-delete service worker
+-clear heroku build cache
