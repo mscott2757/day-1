@@ -1,4 +1,4 @@
-import { faInstagram, faLinkedinIn, faMedium, faSpotify } from '@fortawesome/fontawesome-free-brands';
+import { faInstagram, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
 
 export const info = {
   links: [
@@ -8,8 +8,6 @@ export const info = {
   accounts: [
     { icon: faInstagram, url: 'https://www.instagram.com/masonchan_/', id: 'ig' },
     { icon: faLinkedinIn, url: 'https://www.linkedin.com/in/mason-chan-scott/', id: 'in' },
-    { icon: faMedium, url: 'https://medium.com/@mscott2757', id: 'md' },
-    { icon: faSpotify, url: 'https://open.spotify.com/user/122383669', id: 'sp' },
   ]
 }
 
