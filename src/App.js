@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './styles/scss/app.scss';
 import { Info, Banner, Resume } from './components';
-import { info, banner, resume } from './content';
+import { info, banner } from './content';
 import imgSrc from './images/kyoto-station.jpg';
 
 
