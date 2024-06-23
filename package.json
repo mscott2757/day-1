@@ -23,6 +23,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "globals": "^15.6.0",
     "sass": "^1.49.9"
   },
   "browserslist": {
