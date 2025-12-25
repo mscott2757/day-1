@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page, pdfjs } from 'react-pdf';
 import PropTypes from 'prop-types';
 import file from './../resume.pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+    'pdfjs-dist/build/pdf.worker.min.mjs',
+    import.meta.url,
+).toString();
 
 class Resume extends Component {
   componentDidMount() {
