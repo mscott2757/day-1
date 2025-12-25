@@ -2,32 +2,32 @@
   "name": "day-1",
   "version": "0.1.0",
   "engines": {
-    "node": "20.11.0"
+    "node": ">=20"
   },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "6.5.2",
     "@fortawesome/react-fontawesome": "0.2.2",
-    "ajv": "^6.4.0",
     "npm-run-all": "^4.1.2",
-    "prop-types": "^15.6.1",
+    "pdfjs-dist": "4.8.69",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pdf": "^5.7.1",
-    "react-scripts": "5.0.1"
+    "react-pdf": "^9.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.3",
     "globals": "^15.6.0",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "vite": "^7.3.0"
   },
   "browserslist": {
     "production": [
